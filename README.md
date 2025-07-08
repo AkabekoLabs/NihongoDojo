@@ -1,1 +1,2 @@
-# NihongoDojo
+# 日本語道場
+
