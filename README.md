@@ -8,6 +8,21 @@ Nihongo DoJoは、日本語AIモデルの強化学習（GRPO）用データセ�
 
 ## 🚀 クイックスタート
 
+## 📚 学習ノートブック
+
+Google Colab用のサンプルノートブックを提供：
+
+- `notebooks/training_*_balanced.ipynb` - 各タスク用の最適化済みノートブック
+- 推奨環境: Google Colab T4 GPU
+- 使用モデル: Qwen3-4B
+
+- <a href="https://colab.research.google.com/github/AkabekoLabs/nihongo-dojo/blob/main/notebooks/training_kanji.ipynb" target="_blank">漢字トレーニング</a>
+- <a href="https://colab.research.google.com/github/AkabekoLabs/nihongo-dojo/blob/main/notebooks/training_counter.ipynb" target="_blank">助数詞選択</a>
+- <a href="https://colab.research.google.com/github/AkabekoLabs/nihongo-dojo/blob/main/notebooks/training_fill.ipynb" target="_blank">助詞の穴埋め</a>
+- <a href="https://colab.research.google.com/github/AkabekoLabs/nihongo-dojo/blob/main/notebooks/training_keigo.ipynb" target="_blank">敬語変換</a>
+- <a href="https://colab.research.google.com/github/AkabekoLabs/nihongo-dojo/blob/main/notebooks/training_word.ipynb" target="_blank">語順並び替え</a>
+
+
 ### インストール
 ```bash
 git clone https://github.com/akabekolabs/nihongo-dojo.git
@@ -37,14 +52,6 @@ python generate_datasets.py --grades 1 2 3 --tasks KANJI_READING KANJI_WRITING
 - `WORD_ORDER` - 語順並び替え
 - `COUNTER_WORD` - 助数詞選択
 
-
-## Notebook
-- <a href="https://colab.research.google.com/github/AkabekoLabs/nihongo-dojo/blob/main/notebooks/training_kanji.ipynb" target="_blank">漢字トレーニング</a>
-- <a href="https://colab.research.google.com/github/AkabekoLabs/nihongo-dojo/blob/main/notebooks/training_counter.ipynb" target="_blank">助数詞選択</a>
-- <a href="https://colab.research.google.com/github/AkabekoLabs/nihongo-dojo/blob/main/notebooks/training_fill.ipynb" target="_blank">助詞の穴埋め</a>
-- <a href="https://colab.research.google.com/github/AkabekoLabs/nihongo-dojo/blob/main/notebooks/training_keigo.ipynb" target="_blank">敬語変換</a>
-- <a href="https://colab.research.google.com/github/AkabekoLabs/nihongo-dojo/blob/main/notebooks/training_word.ipynb" target="_blank">語順並び替え</a>
-
 ## 🎖️ 学習サポート機能
 
 ### タスク特化型報酬関数
@@ -71,15 +78,6 @@ visualization_callback = GRPOVisualizationCallback(
     log_filename=logger.log_filename
 )
 ```
-
-## 📚 学習ノートブック
-
-Google Colab用のサンプルノートブックを提供：
-
-- `notebooks/training_*_balanced.ipynb` - 各タスク用の最適化済みノートブック
-- 推奨環境: Google Colab T4 GPU
-- 使用モデル: Qwen3-4B
-
 
 ### カスタム生成例
 ```bash
