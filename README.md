@@ -6,12 +6,6 @@
 
 Nihongo DoJoは、日本語AIモデルの強化学習（GRPO）用データセットを生成するツールです。
 
-### 特徴
-- 📚 **2,065個の常用漢字**を完全カバー
-- 🎌 **19種類の日本語タスク**（基本・上級・文化）
-- 🤖 **GRPO最適化済み**のデータ形式
-- 📊 **大規模生成対応**（数万〜数十万タスク）
-
 ## 🚀 クイックスタート
 
 ### インストール
@@ -43,11 +37,10 @@ python generate_datasets.py --grades 1 2 3 --tasks KANJI_READING KANJI_WRITING
 - `WORD_ORDER` - 語順並び替え
 - `COUNTER_WORD` - 助数詞選択
 
-### 上級タスク（7種類）
-文法、擬音語、会話、ことわざ、ビジネス日本語など
 
-### 文化タスク（6種類）
-季節表現、敬語、方言、年齢・性別言語など
+## Notebook
+- [漢字トレーニング](https://colab.research.google.com/AkabekoLabs/nihongo-dojo/blob/main/notebooks/blotraining_kanji.ipynb)
+
 
 ## 🎖️ 学習サポート機能
 
@@ -84,14 +77,6 @@ Google Colab用のサンプルノートブックを提供：
 - 推奨環境: Google Colab T4 GPU
 - 使用モデル: Qwen3-4B
 
-## 📖 詳細ドキュメント
-
-### プリセット一覧
-| プリセット | タスク数 | 生成時間 |
-|-----------|---------|----------|
-| small | 1万 | 1-2分 |
-| medium | 5万 | 5-10分 |
-| large | 10万 | 10-20分 |
 
 ### カスタム生成例
 ```bash
