@@ -39,7 +39,7 @@ python generate_datasets.py --grades 1 2 3 --tasks KANJI_READING KANJI_WRITING
 
 
 ## Notebook
-- <a href="https://colab.research.google.com/github/AkabekoLabs/nihongo-dojo/blob/main/notebooks/training_kanji.ipynb"　target="_blank">>漢字トレーニング</a>
+- <a href="https://colab.research.google.com/github/AkabekoLabs/nihongo-dojo/blob/main/notebooks/training_kanji.ipynb" target="_blank">漢字トレーニング</a>
 
 ## 🎖️ 学習サポート機能
 
