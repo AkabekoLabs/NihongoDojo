@@ -10,11 +10,7 @@ Nihongo DoJoは、日本語AIモデルの強化学習（GRPO）用データセ�
 
 ## 📚 学習ノートブック
 
-Google Colab用のサンプルノートブックを提供：
-
-- `notebooks/training_*_balanced.ipynb` - 各タスク用の最適化済みノートブック
-- 推奨環境: Google Colab T4 GPU
-- 使用モデル: Qwen3-4B
+Google Colab用のサンプルノートブック：
 
 - <a href="https://colab.research.google.com/github/AkabekoLabs/nihongo-dojo/blob/main/notebooks/training_kanji.ipynb" target="_blank">漢字トレーニング</a>
 - <a href="https://colab.research.google.com/github/AkabekoLabs/nihongo-dojo/blob/main/notebooks/training_counter.ipynb" target="_blank">助数詞選択</a>
