@@ -1,0 +1,37 @@
+{
+  "baseline_model": "base_model",
+  "trained_model": "nihongo-dojo-kanji-balanced",
+  "sample_size": 5,
+  "metrics": {
+    "avg_length_improvement": -78.9654758492399,
+    "format_usage_rate": 0.0,
+    "keigo_usage_rate": 0.0
+  },
+  "sample_comparisons": [
+    {
+      "question_id": 1,
+      "baseline_response": "Assistant: 以下は、ディレクトリ内の全てのテキストファイルを読み込み、出現回数が最も多い上位5単語を返すPythonプログラムです。\n\n```python\nimport os\nfrom collections import Counter\nimport re\n\ndef read_text_files(directory):\n    # ディレクトリ内の全てのファイルをリストアップ\n    all_files = os.listdir(directory)\n    text_files = [file for file in all_files if file.endswith('.txt')]\n    \n    # テキストファイルを読み込み、単語をリストアップ\n    words = []\n    for file in text_files:\n        with open(os.path.join(directory, file), 'r', encoding='utf-8') as f:\n            text = f.read()\n          ",
+      "trained_response": "five"
+    },
+    {
+      "question_id": 2,
+      "baseline_response": "Assistant: 再帰を使用してn番目のフィボナッチ数を求めるC++プログラムは以下のようになります：\n\n```cpp\n#include <iostream>\n\n// 再帰関数でn番目のフィボナッチ数を求める\nint fibonacci(int n) {\n    if (n <= 1) {\n        return n;\n    } else {\n        return fibonacci(n - 1) + fibonacci(n - 2);\n    }\n}\n\nint main() {\n    int n;\n    std::cout << \"n番目のフィボナッチ数を求めます。nを入力してください: \";\n    std::cin >> n;\n\n    if (n < 0) {\n        std::cout << \"フィボナッチ数は非負整数で求められます。\" << std::endl;\n    } else {\n        std::cout << n << \"番目のフィボナッチ数は \" << fibonacci(n) << \" です。\" << std::end",
+      "trained_response": "#include <iostream>\nusing namespace std;\n\nint fibonacci(int n) {\n    if (n <= 1) {\n        return n;\n    } else {\n        return fibonacci(n-1) + fibonacci(n-2);\n    }\n}\n\nint main() {\n    int n;\n    cout << \"Enter the position of the Fibonacci number: \";\n    cin >> n;\n    cout << \"The \" << n << \"th Fibonacci number is \" << fibonacci(n) << endl;\n    return 0;\n}"
+    },
+    {
+      "question_id": 3,
+      "baseline_response": "Assistant: 以下は、HTMLとJavaScriptを使用して、ユーザーがボタンをクリックすると4つのジョークのうちランダムに一つが表示されるシンプルなウェブサイトのコードです。\n\n```html\n<!DOCTYPE html>\n<html lang=\"ja\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>ランダムジョーク</title>\n    <style>\n        body {\n            font-family: Arial, sans-serif;\n            text-align: center;\n            margin-top: 50px;\n        }\n        .joke {\n            margin-top: 20px;\n            font-size: 1.2em;\n        ",
+      "trained_response": "Assistant: <html>\n<head>\n<title>ジョークランダム</title>\n</head>\n<body>\n<h1>ジョークランダム</h1>\n<button onclick=\"showJoke()\">ランダムジョーク</button>\n<p id=\"joke\"></p>\n\n<script>\nfunction showJoke() {\n  var jokes = [\"Why don't scientists trust atoms? Because they make up everything.\", \"Why did the scarecrow win an award? Because he was outstanding in his field.\", \"Why did the math book look sad? Because it had too many problems.\", \"Why don't skeletons fight each other? They don't have the guts.\"];\n  var randomJoke = "
+    },
+    {
+      "question_id": 4,
+      "baseline_response": "Assistant: あなたの提供した `longest_common_subsequence_length` 関数は、動的計画法（Dynamic Programming, DP）を用いて最長共通部分列（LCS）の長さを計算するための適切な実装です。ただし、いくつかのポイントを確認して、潜在的な問題点を排除します。\n\n### バグの確認\n\n1. **初期化**:\n   - `dp` テーブルは正しく初期化されています。`dp[i][0]` と `dp[0][j]` はすべて 0 に設定されています。\n\n2. **ループの範囲**:\n   - 外側のループは `range(1, m + 1)` で `str1` の文字数分、内側のループは `range(1, n + 1)` で `str2` の文字数分回っています。これは正しいです。\n\n3. **比較条件**:\n   - `if str1[i - 1] == str2[j - 1]` で文字が一致するかどうかをチェックしています。これは正しいです。\n\n4. **更新条件**:\n   - 文字が一致する場合、`dp[i][j] = dp[",
+      "trained_response": "no"
+    },
+    {
+      "question_id": 5,
+      "baseline_response": "Assistant: バイナリツリーの2つのノードの最高の共通祖先（highest common ancestor）を見つける関数をPythonで実装します。この問題は、2つのノードが同じ祖先を持つ場合、その祖先が最も深い（つまり、最も近い）祖先であることを求めます。\n\n以下は、再帰的なアプローチでこの問題を解く関数です。\n\n```python\nclass TreeNode:\n    def __init__(self, x):\n        self.val = x\n        self.left = None\n        self.right = None\n\ndef lowestCommonAncestor(root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':\n    # ルートがNoneまたはpまたはqのいずれかである場合は、それらのいずれかを返す\n    if not root or root == p or root == q:\n        return root\n    \n    # 左の",
+      "trained_response": "def highest_common_ancestor(root, p, q):\n    if not root or root == p or root == q:\n        return root\n    left = highest_common_ancestor(root.left, p, q)\n    right = highest_common_ancestor(root.right, p, q)\n    if left and right:\n        return root\n    return left if left else right"
+    }
+  ]
+}
