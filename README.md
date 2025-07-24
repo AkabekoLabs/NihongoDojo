@@ -40,6 +40,10 @@ python generate_datasets.py --grades 1 2 3 --tasks KANJI_READING KANJI_WRITING
 
 ## Notebook
 - <a href="https://colab.research.google.com/github/AkabekoLabs/nihongo-dojo/blob/main/notebooks/training_kanji.ipynb" target="_blank">漢字トレーニング</a>
+- <a href="https://colab.research.google.com/github/AkabekoLabs/nihongo-dojo/blob/main/notebooks/training_counter.ipynb" target="_blank">助数詞選択</a>
+- <a href="https://colab.research.google.com/github/AkabekoLabs/nihongo-dojo/blob/main/notebooks/training_fill.ipynb" target="_blank">助詞の穴埋め</a>
+- <a href="https://colab.research.google.com/github/AkabekoLabs/nihongo-dojo/blob/main/notebooks/training_keigo.ipynb" target="_blank">敬語変換</a>
+- <a href="https://colab.research.google.com/github/AkabekoLabs/nihongo-dojo/blob/main/notebooks/training_word.ipynb" target="_blank">語順並び替え</a>
 
 ## 🎖️ 学習サポート機能
 
