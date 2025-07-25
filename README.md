@@ -106,5 +106,6 @@ python upload_to_huggingface.py \
 ## 📜 ライセンス
 Apache 2.0 License
 
-## 🙏 謝辞
-日本語教育とAI研究の発展に貢献することを目指しています。
+## 関連プロジェクト
+
+- [遊びDoJo](https://github.com/AkabekoLabs/asobi-dojo)
